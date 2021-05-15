@@ -16,7 +16,7 @@ function loop() {
         console.log("too early");
     }
     else if (time === index + 9) {
-        containerEl[index].classList.add("present");
+        contentEl[index].classList.add("present");
         console.log("right now");
     }
     else {
