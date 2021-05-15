@@ -24,6 +24,7 @@
   </head>
 
   <body>
+      <!-- Timeblocks go here -->
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
@@ -34,33 +35,61 @@
         <tbody>
           <tr>
             <th scope="row">9am</th>
-            <td>time</td>
-            <td class="event"></td>
-            <td class="save"><i class="fas fa-save"></i></td>
+            <td class = "content" contenteditable=""></td>
+            <td class="save" ><button class="saveBtn" data-index =0 =""><i class="fas fa-save"></i></button></i></td>
           </tr>
           <tr>
             <th scope="row">10am</th>
-            <td>time</td>
-            <td class="event"></td>
-            <td class="save"><i class="fas fa-save"></i></td>
+            <td class ="content" contenteditable=""></td>
+            <td class="save"><button class="saveBtn" data-index =1><i class="fas fa-save"></i></button></td>
           </tr>
           <tr>
             <th scope="row">11am</th>
-            <td>time</td>
-            <td class="event"></td>
-            <td class="save"><i class="fas fa-save"></i></td>
+            <td class ="content"  contenteditable=""></td>
+            <td class="save"><button class="saveBtn" data-index =2 ><i class="fas fa-save"></i></button></td>
+          </tr>
+          <tr>
+            <th scope="row">12pm</th>
+            <td class ="content" id="twelve" contenteditable=""></td>
+            <td class="save"><button class="saveBtn" data-index =3 ><i class="fas fa-save"></i></button></td>
+          </tr>
+          <tr>
+            <th scope="row">1pm</th>
+            <td class ="content" contenteditable=""></td>
+            <td class="save"><button class="saveBtn" data-index =4 ><i class="fas fa-save"></i></button></td>
+          </tr>
+          <tr>
+            <th scope="row">2pm</th>
+            <td class ="content" contenteditable=""></td>
+            <td class="save"><button class="saveBtn" data-index =5 ><i class="fas fa-save"></i></button></td>
+          </tr>
+          <tr>
+            <th scope="row">3pm</th>
+            <td class ="content" contenteditable=""></td>
+            <td class="save"><button class="saveBtn" data-index =6 ><i class="fas fa-save"></i></button></td>
+          </tr>
+          <tr>
+            <th scope="row">4pm</th>
+            <td class ="content" contenteditable=""></td>
+            <td class="save"><button class="saveBtn" data-index =7><i class="fas fa-save"></i></button></td>
+          </tr>
+          <tr>
+            <th scope="row">5pm</th>
+            <td class ="content" contenteditable=""></td>
+            <td class="save"><button class="saveBtn" data-index =8 ><i class="fas fa-save"></i></button></td>
           </tr>
         </tbody>
       </table>
-      <!-- Timeblocks go here -->
-      <!-- create bootstrap table, can you have buttons in tables? li elements? contains: time, content, and save button -->
+    
     </div>
     
    
-
+    <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Luxon -->
     <script src="https://cdn.jsdelivr.net/npm/luxon@1.26.0/build/global/luxon.min.js"></script>
+   
+    
     <script src="script.js"></script>
   </body>
 </html>
