@@ -1,7 +1,7 @@
 let containerEl = document.querySelector(".container");
 let currentDayEl = document.querySelector("#currentDay");
 let contentEl = document.querySelectorAll(".content"); 
-let allEvents =["","",""];
+let allEvents =["","","","","","","","",""];
 // get current date and time from luxon
 let DateTime = luxon.DateTime;
 let today = DateTime.now().toLocaleString({ weekday: 'long', month: 'long', day: '2-digit' });
@@ -28,11 +28,17 @@ function loop() {
 // store all events to local storage
 function storeEvents() {
     localStorage.setItem("allEvents", JSON.stringify(allEvents));
+    localStorage.setItem("today", JSON.stringify(today));
 }
 //pull all eventes from local storage and dipslay them
 function renderEvents() {
     let showAllEvents = JSON.parse(localStorage.getItem("allEvents"));
-    if(showAllEvents !== null) {
+    let storedDay = JSON.parse(localStorage.getItem("today"));
+    // check to see if the day changed. if it did clear all events from local storage
+    // if there are things in local storage display them on the timeblock.
+    if(storedDay !== today) {
+        storeEvents();
+    }else if(showAllEvents !== null) {
         for( let i = 0; i < contentEl.length; i++) {
             allEvents = showAllEvents;
             contentEl[i].textContent = showAllEvents[i];
