@@ -4,6 +4,16 @@ This is a planner that can be used daily during the hours of 9-5(typical workday
 
 ## Usage
 Great use for organization and time managment of your day. 
-```md
-![this is an image of daily planner main page](assets/images/dailyplanner.png)
-```
+
+## Images
+<img width="1263" alt="dailyplanner1" src="https://user-images.githubusercontent.com/74121562/121060399-309ce380-c788-11eb-8d76-c6a63a55e935.png">
+
+## Technology
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>Javascript</li>
+</ul>
+
+## Deployed Website
+<a href ="https://norgard7.github.io/daily-planner/">Daily Planner</a>
